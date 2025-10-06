@@ -26,7 +26,7 @@ const Index = () => {
           <img 
             src={aravImage} 
             alt="Arav Chopra - Cardiac Health Specialist" 
-            className="w-full h-64 md:h-full object-cover object-center"
+            className="w-full h-80 md:h-full object-cover object-top md:object-center"
           />
         </div>
 
