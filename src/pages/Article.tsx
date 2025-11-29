@@ -30,14 +30,14 @@ const Article = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <header className="mb-12 text-center animate-fade-in-up">
-            <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-              Fundamentals
+            <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 uppercase tracking-wider">
+              Part 1 - Published
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Introduction to Heart Structure
+              The Heart's Blueprint
             </h1>
             <p className="text-lg text-muted-foreground">
-              Understanding the heart's anatomy, how it pumps blood, and what happens when this mechanism fails.
+              Understanding basic structure, function, and an introduction to Congestive Heart Failure (CHF).
             </p>
           </header>
 
@@ -203,11 +203,14 @@ const Article = () => {
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mb-6">
                 <h3 className="font-semibold text-foreground mb-3">Common Medications:</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li><strong className="text-foreground">ACE Inhibitors:</strong> Help relax blood vessels, making it easier for the heart to pump blood.</li>
-                  <li><strong className="text-foreground">Beta-blockers:</strong> Slow the heart rate and lessen the heart's workload.</li>
-                  <li><strong className="text-foreground">Diuretics:</strong> Help the body get rid of extra salt and fluid, reducing swelling.</li>
+                  <li><strong className="text-foreground">ACE Inhibitors:</strong> Help relax blood vessels, making it easier for the heart to pump blood throughout the body. In simpler terms, they lower blood pressure and reduce strain on the heart by blocking certain chemicals that cause blood vessels to tighten.</li>
+                  <li><strong className="text-foreground">Beta-blockers:</strong> May be prescribed in some cases to slow the heart rate and lessen the heart's workload, <em className="text-amber-600">but they are used carefully, since in some patients they can make heart failure symptoms worse.</em></li>
+                  <li><strong className="text-foreground">Diuretics:</strong> Often called "water tablets," help the body get rid of extra salt and fluid, which reduces swelling and makes breathing easier.</li>
                 </ul>
               </div>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                In addition to medication, patients are usually advised to <strong className="text-foreground">limit salt (sodium) intake</strong>, as too much salt can cause the body to retain water and put extra pressure on the heart. Together, these treatments aim to help the heart work more efficiently and improve overall quality of life.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
                 In some cases, when medications and lifestyle changes do not provide enough relief, surgical options may be considered. Procedures such as valve repair or replacement, coronary artery bypass grafting, or even heart transplantation can be necessary to restore proper heart function.
               </p>
