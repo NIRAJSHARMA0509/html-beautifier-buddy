@@ -269,7 +269,9 @@ const Index = () => {
           {/* Social Links */}
           <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/arav-chopra-8a4939353" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-background/10 hover:bg-background/20 rounded-lg transition-colors font-medium"
             >
               LinkedIn
