@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Heart, Clock, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,9 @@ import bloodFlowDiagram from "@/assets/blood-flow-diagram.png";
 import heartAnatomy from "@/assets/heart-anatomy.jpeg";
 
 const Article = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
