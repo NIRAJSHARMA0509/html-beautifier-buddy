@@ -294,7 +294,7 @@ const Article = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed p-5 bg-muted/30 rounded-xl">
-                Early detection of CHF is important because it can lead to better management and treatment options. Recognizing the signs of heart failure in its initial stages can help patients avoid severe complications. Once diagnosed, a comprehensive management plan can be developed, focusing on lifestyle changes and medical interventions to support heart function.
+                Early detection of CHF is important because it can lead to better management and treatment options. Recognizing the signs of heart failure in its initial stages can help patients avoid severe complications. Once diagnosed, a comprehensive management plan can be developed, focusing on lifestyle changes and medical interventions to support heart function. This proactive approach to care is essential in improving outcomes for those living with CHF.
               </p>
             </section>
 

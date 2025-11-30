@@ -165,7 +165,7 @@ const Index = () => {
                     My goal is to translate complex cardiovascular concepts into clear, evidence-based, and accessible articles for the general public. Each piece is developed with a serious, academic approach, grounded in established medical research. I aim to clearly outline the scope and limitations of current knowledge.
                   </p>
                   <p className="text-muted-foreground">
-                    This project is proudly conducted under the expert guidance and supervision of <strong className="text-foreground">Dr. Sandeep Kaushal</strong>, Dean Academics, Prof and Head of Pharmacology at Dayanand Medical College and Hospital in Punjab, whose mentorship is invaluable to this work.
+                    This project is proudly conducted under the expert guidance and supervision of <strong className="text-foreground">Dr. Sandeep Kaushal</strong>, Dean Academics, Professor and Head of Pharmacology at Dayanand Medical College and Hospital in Punjab, India, whose mentorship is invaluable to this work.
                   </p>
                   
                   {/* Medical Disclaimer */}
