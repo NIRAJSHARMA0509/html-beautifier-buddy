@@ -141,7 +141,7 @@ const Index = () => {
               </h2>
             </div>
             
-            <div className="bg-card p-8 md:p-12 md:pl-0 rounded-2xl border border-border shadow-xl overflow-hidden">
+            <div className="bg-card p-8 md:p-12 rounded-2xl border border-border shadow-xl">
               <div className="md:flex md:gap-12 items-start">
                 {/* Image */}
                 <div className="md:w-2/5 mb-8 md:mb-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
