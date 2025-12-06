@@ -209,47 +209,55 @@ const Index = () => {
             </div>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {articles.map((article, index) => (
-                <Card 
-                  key={article.id} 
-                  className={`group transition-all duration-300 animate-fade-in-up overflow-hidden flex flex-col ${
-                    article.available 
-                      ? 'hover:shadow-2xl hover:-translate-y-2 border-t-4 border-t-primary bg-card' 
-                      : 'bg-muted/30 hover:bg-muted/50'
-                  }`}
-                  style={{ animationDelay: `${0.1 * (index + 1)}s` }}
-                >
-                  <CardHeader className="flex-grow">
-                    <Badge 
-                      variant={article.available ? "default" : "secondary"} 
-                      className="w-fit mb-2 uppercase tracking-wider text-xs"
-                    >
-                      {article.part} {article.available ? '- Published' : ''}
-                    </Badge>
-                    <CardTitle className={`text-xl ${article.available ? 'group-hover:text-primary transition-colors' : ''}`}>
-                      {article.title}
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      {article.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className={`pt-0 ${article.available ? 'bg-gradient-to-r from-primary/10 to-primary/5' : 'bg-muted/50'} p-6`}>
-                    {article.available ? (
-                      <Link 
-                        to="/article/introduction-to-heart-structure"
-                        className="font-semibold text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2 group/link"
+              {articles.map((article, index) => {
+                const cardContent = (
+                  <Card 
+                    className={`group transition-all duration-300 animate-fade-in-up overflow-hidden flex flex-col h-full ${
+                      article.available 
+                        ? 'hover:shadow-2xl hover:-translate-y-2 border-t-4 border-t-primary bg-card cursor-pointer' 
+                        : 'bg-muted/30 hover:bg-muted/50'
+                    }`}
+                    style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+                  >
+                    <CardHeader className="flex-grow">
+                      <Badge 
+                        variant={article.available ? "default" : "secondary"} 
+                        className="w-fit mb-2 uppercase tracking-wider text-xs"
                       >
-                        Read Article 
-                        <span className="group-hover/link:translate-x-1 transition-transform" aria-hidden="true">→</span>
-                      </Link>
-                    ) : (
-                      <span className="font-semibold text-muted-foreground/60 cursor-not-allowed inline-flex items-center gap-1">
-                        Coming Soon <span aria-hidden="true">→</span>
-                      </span>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
+                        {article.part} {article.available ? '- Published' : ''}
+                      </Badge>
+                      <CardTitle className={`text-xl ${article.available ? 'group-hover:text-primary transition-colors' : ''}`}>
+                        {article.title}
+                      </CardTitle>
+                      <CardDescription className="text-base">
+                        {article.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className={`pt-0 ${article.available ? 'bg-gradient-to-r from-primary/10 to-primary/5' : 'bg-muted/50'} p-6`}>
+                      {article.available ? (
+                        <span className="font-semibold text-primary group-hover:text-primary/80 transition-colors inline-flex items-center gap-2">
+                          Read Article 
+                          <span className="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                        </span>
+                      ) : (
+                        <span className="font-semibold text-muted-foreground/60 cursor-not-allowed inline-flex items-center gap-1">
+                          Coming Soon <span aria-hidden="true">→</span>
+                        </span>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+
+                return article.available ? (
+                  <Link key={article.id} to="/article/introduction-to-heart-structure" className="block">
+                    {cardContent}
+                  </Link>
+                ) : (
+                  <div key={article.id}>
+                    {cardContent}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
