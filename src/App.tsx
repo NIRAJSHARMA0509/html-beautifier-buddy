@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
+import ArticleAtherosclerosis from "./pages/ArticleAtherosclerosis";
 import NotFound from "./pages/NotFound";
 import PageTransition from "./components/PageTransition";
 
@@ -25,6 +26,11 @@ const AnimatedRoutes = () => {
         <Route path="/article/introduction-to-heart-structure" element={
           <PageTransition>
             <Article />
+          </PageTransition>
+        } />
+        <Route path="/article/atherosclerosis-hypertension" element={
+          <PageTransition>
+            <ArticleAtherosclerosis />
           </PageTransition>
         } />
         <Route path="*" element={

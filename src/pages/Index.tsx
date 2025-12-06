@@ -14,14 +14,16 @@ const articles = [
     description: "Understanding basic structure, function, and an introduction to Congestive Heart Failure (CHF).",
     available: true,
     status: "Published",
+    link: "/article/introduction-to-heart-structure",
   },
   {
     id: 2,
     part: "Part 2",
     title: "The Pressure & the Plaque",
     description: "An introduction to Atherosclerosis (plaque buildup) and Hypertension (high blood pressure).",
-    available: false,
-    status: "Coming Soon",
+    available: true,
+    status: "Published",
+    link: "/article/atherosclerosis-hypertension",
   },
   {
     id: 3,
@@ -260,8 +262,8 @@ const Index = () => {
                   </Card>
                 );
 
-                return article.available ? (
-                  <Link key={article.id} to="/article/introduction-to-heart-structure" className="block">
+                return article.available && article.link ? (
+                  <Link key={article.id} to={article.link} className="block">
                     {cardContent}
                   </Link>
                 ) : (
