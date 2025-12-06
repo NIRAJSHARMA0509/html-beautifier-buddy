@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import aravImage from "@/assets/arav-professional.jpg";
+import aravImage from "@/assets/arav-professional.png";
 import heartLogo from "@/assets/heart-logo.png";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
