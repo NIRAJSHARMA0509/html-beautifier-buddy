@@ -361,7 +361,7 @@ const Article = () => {
           {/* Back to Articles */}
           <div className="mt-16 pt-8 border-t border-border text-center">
             <Button asChild size="lg" className="shadow-lg">
-              <Link to="/">
+              <Link to="/#articles">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to All Articles
               </Link>
