@@ -149,7 +149,7 @@ const Index = () => {
                     <img 
                       src={aravImage} 
                       alt="Arav Chopra" 
-                      className="rounded-xl shadow-lg mx-auto w-full max-w-sm object-cover aspect-[3/4]"
+                      className="rounded-xl shadow-lg mr-auto w-full max-w-sm object-cover aspect-[3/4]"
                     />
                     <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
                       <span className="text-sm font-semibold">Future Medical Professional</span>
