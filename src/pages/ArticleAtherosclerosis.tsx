@@ -4,6 +4,7 @@ import { ArrowLeft, Heart, Clock, BookOpen, AlertTriangle, Activity, Utensils, D
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import atherosclerosisDiagram from "@/assets/atherosclerosis-diagram.png";
+import hypertensionDiagram from "@/assets/hypertension-diagram.png";
 
 const ArticleAtherosclerosis = () => {
   useEffect(() => {
@@ -177,13 +178,27 @@ const ArticleAtherosclerosis = () => {
                 <span className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold shadow-lg">3</span>
                 How Atherosclerosis Contributes to Hypertension
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Atherosclerosis doesn't just result from high blood pressure; it can also <strong className="text-foreground">contribute to high blood pressure</strong>. As plaque deposits accumulate, arteries lose their elasticity and their internal diameter narrows. Healthy arteries are somewhat flexible and expand with each heartbeat. But in atherosclerosis, the arteries become stiffened and less able to widen when blood is pumped through.
-              </p>
-              <div className="p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl border border-primary/20 mb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  This loss of arterial flexibility means the heart must exert more force to push blood forward, leading to higher pressure within the vessels, especially the systolic (pumping) blood pressure (Kim & Jo, 2024). <strong className="text-foreground">In simple terms, hardened arteries create more resistance, so blood pressure rises as if one were pumping through a smaller, more rigid pipe.</strong>
-                </p>
+              <div className="grid lg:grid-cols-2 gap-10 items-start mb-6">
+                <div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Atherosclerosis doesn't just result from high blood pressure; it can also <strong className="text-foreground">contribute to high blood pressure</strong>. As plaque deposits accumulate, arteries lose their elasticity and their internal diameter narrows. Healthy arteries are somewhat flexible and expand with each heartbeat. But in atherosclerosis, the arteries become stiffened and less able to widen when blood is pumped through.
+                  </p>
+                  <div className="p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl border border-primary/20">
+                    <p className="text-muted-foreground leading-relaxed">
+                      This loss of arterial flexibility means the heart must exert more force to push blood forward, leading to higher pressure within the vessels, especially the systolic (pumping) blood pressure (Kim & Jo, 2024). <strong className="text-foreground">In simple terms, hardened arteries create more resistance, so blood pressure rises as if one were pumping through a smaller, more rigid pipe.</strong>
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg">
+                  <img 
+                    src={hypertensionDiagram} 
+                    alt="Hypertension diagram showing force of blood on artery wall, with systolic number (130+) when heart contracts and diastolic number (80+) when heart rests" 
+                    className="w-full h-auto rounded-xl shadow-md"
+                  />
+                  <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
+                    Figure 2: Hypertension - Understanding blood pressure readings (Cleveland Clinic, 2025)
+                  </p>
+                </div>
               </div>
               <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
                 <h3 className="font-bold text-foreground mb-3">Renal Artery Stenosis Example</h3>
