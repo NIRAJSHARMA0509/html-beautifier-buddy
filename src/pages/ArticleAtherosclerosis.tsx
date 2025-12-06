@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import atherosclerosisDiagram from "@/assets/atherosclerosis-diagram.png";
 import hypertensionDiagram from "@/assets/hypertension-diagram.png";
+import heartLogo from "@/assets/heart-logo.png";
 
 const ArticleAtherosclerosis = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const ArticleAtherosclerosis = () => {
               <span>Back to Home</span>
             </Link>
             <Link to="/" className="flex items-center gap-2">
-              <Heart className="w-6 h-6 text-primary fill-primary" />
+              <img src={heartLogo} alt="Heart Logo" className="w-6 h-6 object-contain mix-blend-multiply" />
               <span className="font-bold text-lg text-foreground">Arav Chopra</span>
             </Link>
           </div>
