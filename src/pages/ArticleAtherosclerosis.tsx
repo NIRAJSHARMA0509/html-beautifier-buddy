@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Heart, Clock, BookOpen, AlertTriangle, Activity, Utensils, Dumbbell, Ban, Pill, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import atherosclerosisDiagram from "@/assets/atherosclerosis-diagram.png";
 
 const ArticleAtherosclerosis = () => {
   useEffect(() => {
@@ -75,13 +76,27 @@ const ArticleAtherosclerosis = () => {
                 <span className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold shadow-lg">1</span>
                 What Is Atherosclerosis?
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Atherosclerosis is the gradual buildup of plaque inside the walls of arteries. Plaque consists of fats, cholesterol, calcium, and other substances that stick to the arterial lining, causing the arteries to become thicker, hardened, and less flexible (often referred to as "hardening of the arteries") (Cleveland Clinic, 2024). Typically, the process begins with damage to the artery's inner lining, after which cholesterol and other materials deposit at the site. The body's immune system responds, leading to chronic inflammation in the artery wall.
-              </p>
-              <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">In simpler terms:</strong> Atherosclerosis isn't just fat clogging the arteries—it is an active inflammatory process in the vessel wall. Over years, the plaque can grow larger and protrude into the arterial channel (lumen), gradually narrowing the passage for blood. Early on, this process is usually silent; most people don't experience noticeable symptoms until an artery is significantly narrowed or blocked.
-                </p>
+              <div className="grid lg:grid-cols-2 gap-10 items-start">
+                <div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Atherosclerosis is the gradual buildup of plaque inside the walls of arteries. Plaque consists of fats, cholesterol, calcium, and other substances that stick to the arterial lining, causing the arteries to become thicker, hardened, and less flexible (often referred to as "hardening of the arteries") (Cleveland Clinic, 2024). Typically, the process begins with damage to the artery's inner lining, after which cholesterol and other materials deposit at the site. The body's immune system responds, leading to chronic inflammation in the artery wall.
+                  </p>
+                  <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
+                    <p className="text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">In simpler terms:</strong> Atherosclerosis isn't just fat clogging the arteries—it is an active inflammatory process in the vessel wall. Over years, the plaque can grow larger and protrude into the arterial channel (lumen), gradually narrowing the passage for blood. Early on, this process is usually silent; most people don't experience noticeable symptoms until an artery is significantly narrowed or blocked.
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg">
+                  <img 
+                    src={atherosclerosisDiagram} 
+                    alt="Atherosclerosis diagram showing normal artery vs artery with plaque buildup, and progression from formation to growth and rupture to blood clot" 
+                    className="w-full h-auto rounded-xl shadow-md"
+                  />
+                  <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
+                    Figure 1: Atherosclerosis progression - from normal artery to plaque formation and blood clot (Cleveland Clinic, 2024)
+                  </p>
+                </div>
               </div>
               <div className="mt-6 bg-gradient-to-r from-destructive/10 to-destructive/5 border-l-4 border-destructive rounded-xl p-6">
                 <p className="text-foreground leading-relaxed">
