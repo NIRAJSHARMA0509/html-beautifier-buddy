@@ -114,7 +114,7 @@ const ArticleAtherosclerosis = () => {
                     <Activity className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Unhealthy Cholesterol Levels</h3>
-                  <p className="text-sm text-muted-foreground">High levels of LDL ("bad") cholesterol and triglycerides in the blood greatly increase plaque formation. Excess LDL infiltrates the artery wall and is a primary fuel for atherosclerotic plaque. Low levels of HDL ("good") cholesterol can also heighten risk.</p>
+                  <p className="text-sm text-muted-foreground">High levels of LDL ("bad") cholesterol and triglycerides in the blood greatly increase plaque formation. Excess LDL infiltrates the artery wall and is a primary fuel for atherosclerotic plaque. Low levels of HDL ("good") cholesterol (which helps clear cholesterol from arteries) can also heighten risk.</p>
                 </div>
                 <div className="bg-gradient-to-br from-card to-muted/20 border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
@@ -123,7 +123,7 @@ const ArticleAtherosclerosis = () => {
                     </svg>
                   </div>
                   <h3 className="font-bold text-foreground mb-2">High Blood Pressure (Hypertension)</h3>
-                  <p className="text-sm text-muted-foreground">Chronic high blood pressure puts mechanical stress on artery walls. Over time, this pressure can damage the endothelium, making arteries more susceptible to plaque buildup. Hypertension is one of the most common risk factors (Pahwa & Jialal, 2023).</p>
+                  <p className="text-sm text-muted-foreground">Chronic high blood pressure puts mechanical stress on artery walls. Over time, this pressure can damage the endothelium, making arteries more susceptible to plaque buildup. Hypertension is one of the most common risk factors for atherosclerosis (Pahwa & Jialal, 2023).</p>
                 </div>
                 <div className="bg-gradient-to-br from-card to-muted/20 border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 bg-destructive/10 rounded-xl flex items-center justify-center mb-4">
@@ -151,7 +151,7 @@ const ArticleAtherosclerosis = () => {
                     <Heart className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Family History and Age</h3>
-                  <p className="text-sm text-muted-foreground">Genetics also play a role. A family history of early heart disease or stroke suggests a predisposition to atherosclerosis. Age is also a significant factor, with risk increasing as we get older.</p>
+                  <p className="text-sm text-muted-foreground">Genetics also play a role. A family history of early heart disease or stroke suggests a predisposition to atherosclerosis.</p>
                 </div>
               </div>
             </section>
@@ -173,7 +173,7 @@ const ArticleAtherosclerosis = () => {
               <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
                 <h3 className="font-bold text-foreground mb-3">Renal Artery Stenosis Example</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  An example of atherosclerosis-induced hypertension is renal artery stenosis—the narrowing of arteries that supply the kidneys. The kidneys play a crucial role in blood pressure regulation. If plaque significantly narrows a kidney artery, the reduced blood flow tricks the kidney into thinking blood pressure is too low, prompting it to release hormones that raise blood pressure throughout the body. As a result, atherosclerosis in the renal arteries can lead to secondary hypertension. Atherosclerosis is the most common cause of renal artery stenosis and the resultant hard-to-control blood pressure (Cleveland Clinic, 2024).
+                  An example of atherosclerosis-induced hypertension is renal artery stenosis, the narrowing of arteries that supply the kidneys. The kidneys play a crucial role in blood pressure regulation. If plaque significantly narrows a kidney artery, the reduced blood flow tricks the kidney into thinking blood pressure is too low, prompting it to release hormones that raise blood pressure throughout the body. As a result, atherosclerosis in the renal arteries can lead to secondary hypertension (high blood pressure caused by another condition). Atherosclerosis is the most common cause of renal artery stenosis and the resultant hard-to-control blood pressure (Cleveland Clinic, 2024).
                 </p>
               </div>
               <div className="mt-6 bg-gradient-to-r from-destructive/10 to-destructive/5 border-l-4 border-destructive rounded-xl p-6">
