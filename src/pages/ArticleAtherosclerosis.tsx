@@ -239,7 +239,7 @@ const ArticleAtherosclerosis = () => {
                   <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                   <div>
                     <strong className="text-foreground text-lg">Dementia</strong>
-                    <p className="text-muted-foreground mt-1">Reduced blood flow to the brain can also lead to dementia and cognitive decline.</p>
+                    <p className="text-muted-foreground mt-1">Reduced blood flow to the brain can also lead to dementia.</p>
                   </div>
                 </div>
               </div>
@@ -270,28 +270,28 @@ const ArticleAtherosclerosis = () => {
                     <Dumbbell className="w-5 h-5 text-primary" />
                     <h3 className="font-bold text-foreground">Regular Exercise</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm">At least 150 minutes of moderate aerobic exercise per week helps maintain cardiovascular health.</p>
+                  <p className="text-muted-foreground text-sm">At least 150 minutes of moderate aerobic exercise per week.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-card to-muted/20 rounded-xl border border-border">
                   <div className="flex items-center gap-3 mb-3">
                     <Activity className="w-5 h-5 text-primary" />
                     <h3 className="font-bold text-foreground">Maintain a Healthy Weight</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm">Achieve and maintain a healthy body weight to reduce strain on your cardiovascular system.</p>
+                  <p className="text-muted-foreground text-sm">Achieve and maintain a healthy body weight.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-card to-muted/20 rounded-xl border border-border">
                   <div className="flex items-center gap-3 mb-3">
                     <Ban className="w-5 h-5 text-destructive" />
                     <h3 className="font-bold text-foreground">Don't Smoke</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm">Avoid smoking and all tobacco products. Quitting smoking significantly reduces cardiovascular risk.</p>
+                  <p className="text-muted-foreground text-sm">Avoid smoking and all tobacco products.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-card to-muted/20 rounded-xl border border-border">
                   <div className="flex items-center gap-3 mb-3">
                     <Heart className="w-5 h-5 text-primary" />
                     <h3 className="font-bold text-foreground">Control Blood Pressure & Blood Sugar</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm">Work with healthcare providers to manage these conditions through regular monitoring and appropriate treatment.</p>
+                  <p className="text-muted-foreground text-sm">Work with healthcare providers to manage these conditions.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-card to-muted/20 rounded-xl border border-border">
                   <div className="flex items-center gap-3 mb-3">
