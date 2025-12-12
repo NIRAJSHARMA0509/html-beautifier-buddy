@@ -299,18 +299,6 @@ const Index = () => {
             >
               LinkedIn
             </a>
-            <a 
-              href="#" 
-              className="px-6 py-3 bg-background/10 hover:bg-background/20 rounded-lg transition-colors font-medium"
-            >
-              X / Twitter
-            </a>
-            <a 
-              href="#" 
-              className="px-6 py-3 bg-background/10 hover:bg-background/20 rounded-lg transition-colors font-medium"
-            >
-              ResearchGate
-            </a>
           </div>
           
           <div className="border-t border-background/20 pt-8">
