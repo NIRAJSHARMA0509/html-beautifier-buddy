@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import aravImage from "@/assets/arav-professional.png";
-import heartLogo from "@/assets/heart-logo.png";
+import siteLogo from "@/assets/logo-arav-chopra.svg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Heart, BookOpen, Users } from "lucide-react";
@@ -80,9 +80,8 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="#home" className="font-bold text-2xl text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
-              <img src={heartLogo} alt="Heart Logo" className="w-14 h-14 object-contain mix-blend-multiply" />
-              Arav Chopra
+            <a href="#home" className="hover:opacity-80 transition-opacity">
+              <img src={siteLogo} alt="Arav Chopra - Heart Health" className="h-12 w-auto" />
             </a>
             
             {/* Desktop Navigation */}

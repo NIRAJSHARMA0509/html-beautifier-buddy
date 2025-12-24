@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import bloodFlowDiagram from "@/assets/blood-flow-diagram.png";
 import heartAnatomy from "@/assets/heart-anatomy.jpeg";
-import heartLogo from "@/assets/heart-logo.png";
+import siteLogo from "@/assets/logo-arav-chopra.svg";
 
 const Article = () => {
   useEffect(() => {
@@ -21,9 +21,8 @@ const Article = () => {
               <ArrowLeft className="w-5 h-5" />
               <span>Back to Home</span>
             </Link>
-            <Link to="/" className="flex items-center gap-2">
-              <img src={heartLogo} alt="Heart Logo" className="w-14 h-14 object-contain mix-blend-multiply" />
-              <span className="font-bold text-lg text-foreground">Arav Chopra</span>
+            <Link to="/" className="hover:opacity-80 transition-opacity">
+              <img src={siteLogo} alt="Arav Chopra - Heart Health" className="h-10 w-auto" />
             </Link>
           </div>
         </div>
