@@ -100,7 +100,7 @@ const ArticleSupplyDemand = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed p-5 bg-muted/30 rounded-xl">
-                Narrowing of the coronary arteries due to plaque buildup reduces blood flow to heart muscle. Blood oxygen content may be reduced in conditions such as anaemia or chronic lung disease. In addition, coronary perfusion occurs primarily during diastole, when the heart muscle is relaxed. A rapid heart rate shortens diastole, reducing the time available for coronary blood flow and potentially limiting oxygen delivery (Klabunde, 2020).
+                Narrowing of the coronary arteries due to plaque buildup reduces blood flow to heart muscle. Blood oxygen content may be reduced in conditions such as anaemia or chronic lung disease. In addition, coronary perfusion occurs primarily during diastole, when the heart muscle is relaxed. An increased heart rate shortens diastole, further limiting blood accumulated and ultimately oxygen delivery (Klabunde, 2020).
               </p>
             </section>
 
