@@ -221,24 +221,15 @@ const ArticleSupplyDemand = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex gap-4 items-start p-5 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors">
                   <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-foreground text-lg">Heart rate slows</strong>
-                    <p className="text-muted-foreground mt-1">Reducing the number of contractions per minute and lowering overall oxygen consumption.</p>
-                  </div>
+                  <strong className="text-foreground text-lg">Heart rate slows</strong>
                 </div>
                 <div className="flex gap-4 items-start p-5 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors">
                   <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-foreground text-lg">Blood pressure decreases</strong>
-                    <p className="text-muted-foreground mt-1">Reducing ventricular wall stress and the force needed to eject blood.</p>
-                  </div>
+                  <strong className="text-foreground text-lg">Blood pressure decreases</strong>
                 </div>
                 <div className="flex gap-4 items-start p-5 bg-card rounded-xl border border-border hover:border-primary/30 transition-colors">
                   <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                  <div>
-                    <strong className="text-foreground text-lg">Myocardial contractility is reduced</strong>
-                    <p className="text-muted-foreground mt-1">The heart doesn't need to contract as forcefully at rest.</p>
-                  </div>
+                  <strong className="text-foreground text-lg">Myocardial contractility is reduced</strong>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4 p-5 bg-muted/30 rounded-xl">
