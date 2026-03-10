@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import siteLogo from "@/assets/logo-arav-chopra.svg";
 import myocardialInfarctionDiagram from "@/assets/myocardial-infarction.png";
+import oxygenSupplyDemand from "@/assets/oxygen-supply-demand.png";
 
 const ArticleSupplyDemand = () => {
   useEffect(() => {
@@ -144,12 +145,26 @@ const ArticleSupplyDemand = () => {
                 <span className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold shadow-lg">3</span>
                 Exercise and the Supply-Demand Mismatch
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Exercise places significant metabolic & oxygen demands on the heart. To support increased physical activity, heart rate accelerates, blood pressure rises, and the strength of contraction increases. These changes markedly elevate myocardial oxygen demand.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                In individuals with healthy coronary arteries, vessel dilation allows blood flow to increase and meet this demand. In contrast, when coronary arteries are narrowed by atherosclerotic plaque, their ability to dilate is limited. As a result, oxygen delivery cannot increase adequately, leading to myocardial ischemia (Cleveland Clinic, 2024a).
-              </p>
+              <div className="grid lg:grid-cols-2 gap-10 items-start mb-6">
+                <div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Exercise places significant metabolic & oxygen demands on the heart. To support increased physical activity, heart rate accelerates, blood pressure rises, and the strength of contraction increases. These changes markedly elevate myocardial oxygen demand.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    In individuals with healthy coronary arteries, vessel dilation allows blood flow to increase and meet this demand. In contrast, when coronary arteries are narrowed by atherosclerotic plaque, their ability to dilate is limited. As a result, oxygen delivery cannot increase adequately, leading to myocardial ischemia (Cleveland Clinic, 2024a).
+                  </p>
+                </div>
+                <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg">
+                  <img 
+                    src={oxygenSupplyDemand} 
+                    alt="Oxygen supply and demand balance diagram showing normal metabolism vs myocardial ischemia with insufficient oxygen supply" 
+                    className="w-full h-auto rounded-xl"
+                  />
+                  <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
+                    Figure 1: Oxygen supply-demand balance in normal metabolism vs myocardial ischemia
+                  </p>
+                </div>
+              </div>
               <div className="mt-6 bg-gradient-to-r from-destructive/10 to-destructive/5 border-l-4 border-destructive rounded-xl p-6 mb-6">
                 <p className="text-foreground leading-relaxed">
                   <strong className="text-destructive flex items-center gap-2 mb-2">
@@ -172,23 +187,19 @@ const ArticleSupplyDemand = () => {
                 <span className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold shadow-lg">4</span>
                 Progression From Ischemia to Myocardial Infarction
               </h2>
-              <div className="grid lg:grid-cols-2 gap-10 items-start mb-6">
-                <div>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    If the ischemia is brief, heart muscle cells may recover, once oxygen supply is restored. However, when ischemia is prolonged or severe, irreversible injury occurs. A myocardial infarction develops when oxygen deprivation leads to the death of heart muscle cells (Thygesen et al., 2018).
-                  </p>
-                </div>
-                <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg">
-                  <img 
-                    src={myocardialInfarctionDiagram} 
-                    alt="Heart attack (Myocardial infarction) diagram showing dying heart muscle, coronary artery with plaque and blood clot causing lack of blood flow" 
-                    className="w-full h-auto rounded-xl shadow-md"
-                  />
-                  <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
-                    Figure 1: Myocardial Infarction — plaque and blood clot blocking coronary artery (Cleveland Clinic, 2025)
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg mb-6 max-w-lg mx-auto">
+                <img 
+                  src={myocardialInfarctionDiagram} 
+                  alt="Heart attack (Myocardial infarction) diagram showing dying heart muscle, coronary artery with plaque and blood clot causing lack of blood flow" 
+                  className="w-full h-auto rounded-xl shadow-md"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
+                  Figure 2: Myocardial Infarction — plaque and blood clot blocking coronary artery (Cleveland Clinic, 2025)
+                </p>
               </div>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                If the ischemia is brief, heart muscle cells may recover, once oxygen supply is restored. However, when ischemia is prolonged or severe, irreversible injury occurs. A myocardial infarction develops when oxygen deprivation leads to the death of heart muscle cells (Thygesen et al., 2018).
+              </p>
               <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   <strong className="text-foreground">Myocardial infarction most commonly results from:</strong>
