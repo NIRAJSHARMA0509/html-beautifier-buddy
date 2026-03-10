@@ -30,8 +30,9 @@ const articles = [
     part: "Part 3",
     title: "Supply, Demand, & MI",
     description: "What happens when the heart's oxygen supply doesn't meet demand, leading to Myocardial Infarction (Heart Attack).",
-    available: false,
-    status: "Coming Soon",
+    available: true,
+    status: "Published",
+    link: "/article/supply-demand-mi",
   },
   {
     id: 4,

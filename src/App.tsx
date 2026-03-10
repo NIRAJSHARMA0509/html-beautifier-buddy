@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
 import ArticleAtherosclerosis from "./pages/ArticleAtherosclerosis";
+import ArticleSupplyDemand from "./pages/ArticleSupplyDemand";
 import NotFound from "./pages/NotFound";
 import PageTransition from "./components/PageTransition";
 
@@ -31,6 +32,11 @@ const AnimatedRoutes = () => {
         <Route path="/article/atherosclerosis-hypertension" element={
           <PageTransition>
             <ArticleAtherosclerosis />
+          </PageTransition>
+        } />
+        <Route path="/article/supply-demand-mi" element={
+          <PageTransition>
+            <ArticleSupplyDemand />
           </PageTransition>
         } />
         <Route path="*" element={
