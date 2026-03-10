@@ -4,6 +4,7 @@ import { ArrowLeft, Heart, Clock, BookOpen, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import siteLogo from "@/assets/logo-arav-chopra.svg";
+import myocardialInfarctionDiagram from "@/assets/myocardial-infarction.png";
 
 const ArticleSupplyDemand = () => {
   useEffect(() => {
