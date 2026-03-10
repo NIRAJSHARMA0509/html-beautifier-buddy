@@ -34,6 +34,11 @@ const AnimatedRoutes = () => {
             <ArticleAtherosclerosis />
           </PageTransition>
         } />
+        <Route path="/article/supply-demand-mi" element={
+          <PageTransition>
+            <ArticleSupplyDemand />
+          </PageTransition>
+        } />
         <Route path="*" element={
           <PageTransition>
             <NotFound />
