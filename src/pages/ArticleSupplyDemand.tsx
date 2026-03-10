@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Heart, Clock, BookOpen, AlertTriangle, Activity } from "lucide-react";
+import { ArrowLeft, Heart, Clock, BookOpen, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import siteLogo from "@/assets/logo-arav-chopra.svg";
