@@ -187,23 +187,19 @@ const ArticleSupplyDemand = () => {
                 <span className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold shadow-lg">4</span>
                 Progression From Ischemia to Myocardial Infarction
               </h2>
-              <div className="grid lg:grid-cols-2 gap-10 items-start mb-6">
-                <div>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    If the ischemia is brief, heart muscle cells may recover, once oxygen supply is restored. However, when ischemia is prolonged or severe, irreversible injury occurs. A myocardial infarction develops when oxygen deprivation leads to the death of heart muscle cells (Thygesen et al., 2018).
-                  </p>
-                </div>
-                <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg">
-                  <img 
-                    src={myocardialInfarctionDiagram} 
-                    alt="Heart attack (Myocardial infarction) diagram showing dying heart muscle, coronary artery with plaque and blood clot causing lack of blood flow" 
-                    className="w-full h-auto rounded-xl shadow-md"
-                  />
-                  <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
-                    Figure 1: Myocardial Infarction — plaque and blood clot blocking coronary artery (Cleveland Clinic, 2025)
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-card to-muted/30 rounded-2xl p-6 border border-border shadow-lg mb-6 max-w-lg mx-auto">
+                <img 
+                  src={myocardialInfarctionDiagram} 
+                  alt="Heart attack (Myocardial infarction) diagram showing dying heart muscle, coronary artery with plaque and blood clot causing lack of blood flow" 
+                  className="w-full h-auto rounded-xl shadow-md"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-4 font-medium">
+                  Figure 2: Myocardial Infarction — plaque and blood clot blocking coronary artery (Cleveland Clinic, 2025)
+                </p>
               </div>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                If the ischemia is brief, heart muscle cells may recover, once oxygen supply is restored. However, when ischemia is prolonged or severe, irreversible injury occurs. A myocardial infarction develops when oxygen deprivation leads to the death of heart muscle cells (Thygesen et al., 2018).
+              </p>
               <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   <strong className="text-foreground">Myocardial infarction most commonly results from:</strong>
