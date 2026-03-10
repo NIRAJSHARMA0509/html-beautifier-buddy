@@ -113,31 +113,25 @@ const ArticleSupplyDemand = () => {
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Myocardial oxygen demand reflects how hard the heart is working and is determined by three primary physiological factors:
               </p>
-              <div className="grid sm:grid-cols-3 gap-6 mb-6">
-                <div className="bg-gradient-to-br from-card to-muted/20 border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <Activity className="w-6 h-6 text-primary" />
+              <div className="p-6 bg-muted/30 rounded-xl border border-border mb-6">
+                <div className="space-y-3">
+                  <div className="flex gap-3 items-start">
+                    <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-muted-foreground">heart rate</p>
                   </div>
-                  <h3 className="font-bold text-foreground mb-2">Heart Rate</h3>
-                  <p className="text-sm text-muted-foreground">Has a particularly strong influence on oxygen demand. As heart rate increases, oxygen consumption rises while the duration of diastole shortens, reducing coronary perfusion time.</p>
-                </div>
-                <div className="bg-gradient-to-br from-card to-muted/20 border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <Heart className="w-6 h-6 text-primary" />
+                  <div className="flex gap-3 items-start">
+                    <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-muted-foreground">myocardial contractility</p>
                   </div>
-                  <h3 className="font-bold text-foreground mb-2">Myocardial Contractility</h3>
-                  <p className="text-sm text-muted-foreground">Stronger contractions require more energy/power and therefore more oxygen.</p>
-                </div>
-                <div className="bg-gradient-to-br from-card to-muted/20 border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
+                  <div className="flex gap-3 items-start">
+                    <span className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-muted-foreground">ventricular wall stress</p>
                   </div>
-                  <h3 className="font-bold text-foreground mb-2">Ventricular Wall Stress</h3>
-                  <p className="text-sm text-muted-foreground">Increases when blood pressure is elevated or when the ventricles are dilated, forcing the heart to generate greater tension to eject blood (Guyton & Hall, 2021).</p>
                 </div>
               </div>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Heart rate has a particularly strong influence on oxygen demand. As heart rate increases, oxygen consumption rises while the duration of diastole shortens, reducing coronary perfusion time. Contractility also contributes, as stronger contractions require more energy/power and therefore more oxygen. Wall stress increases when blood pressure is elevated or when the ventricles are dilated, forcing the heart to generate greater tension to eject blood (Guyton & Hall, 2021).
+              </p>
               <p className="text-muted-foreground leading-relaxed p-5 bg-muted/30 rounded-xl">
                 During physical activity, all three factors typically increase simultaneously. In a healthy heart, coronary blood flow rises accordingly to maintain balance. In the presence of coronary artery disease, however, oxygen demand increases without a sufficient rise in supply.
               </p>
